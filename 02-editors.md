@@ -81,7 +81,7 @@ Upload these 3 files to the [`editors`](editors/) folder.
 
 What terminal editor will be your preferred choice of use? How did you make your decision?
 
->> emacs will be my preffered editor as it is powerful and it is the same across graphical and non-graphical environment
+>> emacs will be my preferred editor as it is powerful and it is the same across graphical and non-graphical environment
 
 
 
