@@ -83,7 +83,7 @@ What terminal editor will be your preferred choice of use? How did you make your
 
 >> emacs will be my preffered editor as it is powerful and it is the same across graphical and non-graphical environment
 
---
+
 
 ### Q3. Graphical Editor
 
@@ -91,8 +91,8 @@ What graphical editor will you use? How did you make your decision? What are som
 
 
 >> * I'll use emacs as it is the same across graphical and no-graphical environment.  
->> *  An interesting feature of emacs is the ability to open a file by just entering the first few letters of the file and pressing tab to automatically complete the file name.  
->> *  Some useful keyboard shortcuts are C-e to move to the end of a line and C-a to move to the beginning of a line. 
+>> * An interesting feature of emacs is its ability to open a file by just entering the first few letters of the file and pressing tab to automatically complete the file name.  
+>> * Some useful keyboard shortcuts are C-e to move to the end of a line and C-a to move to the beginning of a line. 
 >> * The editor can be customized by pressing alt-x and selecting Custom Themes and then clicking on each theme to see the changes and set the desired theme.
 
 
