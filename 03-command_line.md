@@ -73,7 +73,8 @@ What does `xargs` do? Give an example of how to use it.
 > > Example:  
 > > `xargs touch`   
 > > (Stdin) a1.txt, b1.txt   
-> > `ls`  a1.txt, b1.txt  
+> > `ls`    
+> > a1.txt, b1.txt  
 
  
 
