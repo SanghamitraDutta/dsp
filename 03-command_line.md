@@ -43,13 +43,13 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > `ls` - Lists all files and folders in the current directory that are not hidden
-> > `ls -a` - Lists all files and folders in the current directory including the ones that are hidden. 'a' includes the directory entries whose names begin with (.) 
-> > `ls -l` - Gives a detailed list of all files and folders in the current directory that are not hidden. 'l' is for long format
-> > `ls -lh` - Gives a detailed list of all files and folders in the current directory that are not hidden with the file/dirctory size abbreviated with unit suffixes like B for Byte, K for Kilibyte, etc. in order to reduce the number of digits to three or less. 'h' is for the file size suffixes.
-> > `ls -lah` - Gives a detailed list just like the command 'ls -lh' but the 'a' also includes the hidden files/directories that begin with (.) 
-> > `ls -t` -  Lists all files and folders in the current directory that are not hidden in the order of time and date of creation. 't' is for arranging in order of last modification time starting first with the newest and going down to the oldest and then it modifies it inlexicographical order.
-> > `ls -Glp` - Lists all files and folders in the current directory that are not hidden with different color codings for files and folders. 'G' is for enabling colorized output with different color codings of files and folders, 'l' is for long list format and 'p' writes a / at the end of each filename if that file is a directory 
+> > * `ls` - Lists all files and folders in the current directory that are not hidden
+> > * `ls -a` - Lists all files and folders in the current directory including the ones that are hidden. 'a' includes the directory entries whose names begin with (.) 
+> > * `ls -l` - Gives a detailed list of all files and folders in the current directory that are not hidden. 'l' is for long format
+> > * `ls -lh` - Gives a detailed list of all files and folders in the current directory that are not hidden with the file/dirctory size abbreviated with unit suffixes like B for Byte, K for Kilibyte, etc. in order to reduce the number of digits to three or less. 'h' is for the file size suffixes.
+> > * `ls -lah` - Gives a detailed list just like the command 'ls -lh' but the 'a' also includes the hidden files/directories that begin with (.) 
+> > * `ls -t` -  Lists all files and folders in the current directory that are not hidden in the order of time and date of creation. 't' is for arranging in order of last modification time starting first with the newest and going down to the oldest and then it modifies it inlexicographical order.
+> > * `ls -Glp` - Lists all files and folders in the current directory that are not hidden with different color codings for files and folders. 'G' is for enabling colorized output with different color codings of files and folders, 'l' is for long list format and 'p' writes a / at the end of each filename if that file is a directory 
 
 ---
 
@@ -70,7 +70,11 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 What does `xargs` do? Give an example of how to use it.
 
 > > `xargs` reads data from standard input (stdin) and executes the command (supplied to it as argument) one or more times based on the input read.
-> > Example: `xargs touch`   Stdin - a1.txt, b1.txt   ls a1.txt, b1.txt
+> > Example:
+> > `xargs touch` 
+> > (Stdin) a1.txt, b1.txt 
+> > `ls`
+> > a1.txt, b1.txt
 
  
 
