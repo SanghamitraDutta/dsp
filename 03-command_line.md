@@ -69,12 +69,12 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > `xargs` reads data from standard input (stdin) and executes the command (supplied to it as argument) one or more times based on the input read.
-> > Example:
-> > `xargs touch` 
-> > (Stdin) a1.txt, b1.txt 
-> > `ls`
-> > a1.txt, b1.txt
+> > `xargs` reads data from standard input (stdin) and executes the command (supplied to it as argument) one or more times based on the input read.  
+> > Example:  
+> > `xargs touch`   
+> > (Stdin) a1.txt, b1.txt   
+> > `ls`  
+> > a1.txt, b1.txt  
 
  
 
