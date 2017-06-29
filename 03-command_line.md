@@ -19,7 +19,16 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > * show current working directory path - `pwd`
+> > * creating a directory - `mkdir`
+> > * deleting a directory - `rmdir`
+> > * creating a file using `touch` command - `touch abc.py`
+> > * deleting a file - `rm`
+> > * renaming a file - `mv`
+> > * listing hidden files - `ls -ad .*`
+> > * copying a file from one directory to another - `cp` 
+> > * copying one director called 'a' to a new directory called 'b' - `cp -r a b`
+> > * removing a directory,'hello', along with the files inside it - `rm -rf hello`
 
 ---
 
@@ -34,7 +43,13 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > `ls` - Lists all files and folders in the current directory that are not hidden
+> > `ls -a` - Lists all files and folders in the current directory including the ones that are hidden. 'a' includes the directory entries whose names begin with (.) 
+> > `ls -l` - Gives a detailed list of all files and folders in the current directory that are not hidden. 'l' is for long format
+> > `ls -lh` - Gives a detailed list of all files and folders in the current directory that are not hidden with the file/dirctory size abbreviated with unit suffixes like B for Byte, K for Kilibyte, etc. in order to reduce the number of digits to three or less. 'h' is for the file size suffixes.
+> > `ls -lah` - Gives a detailed list just like the command 'ls -lh' but the 'a' also includes the hidden files/directories that begin with (.) 
+> > `ls -t` -  Lists all files and folders in the current directory that are not hidden in the order of time and date of creation. 't' is for arranging in order of last modification time starting first with the newest and going down to the oldest and then it modifies it inlexicographical order.
+> > `ls -Glp` - Lists all files and folders in the current directory that are not hidden with different color codings for files and folders. 'G' is for enabling colorized output with different color codings of files and folders, 'l' is for long list format and 'p' writes a / at the end of each filename if that file is a directory 
 
 ---
 
@@ -42,7 +57,11 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > * `ls -lahGp` - 'l' gives a detailed list of all files and folders in the current directory. 'a' includes in the list the files/directories that are hidden.'h' abbreviates the file/directory size with unit suffixes like B for Byte, K for Kilibyte, etc. in order to reduce the number of digits to three or less.'G' enables colorized output with different color codings of files and folders and lastly 'p' writes a / at the end of each filename if that file is a directory  
+> > * `ls -R` - 'R' displays subdirectories as well
+> > * `ls -1` - '1' displays each entry on a line
+> > * `ls -r` - 'r' displays files in reverse order
+> > * `ls -p` - 'p' displays directories with /
 
 ---
 
@@ -50,7 +69,8 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > `xargs` reads data from standard input (stdin) and executes the command (supplied to it as argument) one or more times based on the input read.
+> > Example: `xargs touch`   Stdin - a1.txt, b1.txt   ls a1.txt, b1.txt
 
  
 
