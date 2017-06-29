@@ -72,7 +72,7 @@ What does `xargs` do? Give an example of how to use it.
 > > `xargs` reads data from standard input (stdin) and executes the command (supplied to it as argument) one or more times based on the input read.  
 > > Example:  
 > > `xargs touch`   
-> > (Stdin) a1.txt
+> > (Stdin) a1.txt  
 > > (Stdin) b1.txt   
 > > `ls`    
 > > `a1.txt    b1.txt`  
