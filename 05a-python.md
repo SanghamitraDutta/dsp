@@ -62,7 +62,7 @@ How are Python lists and sets similar and different? Give examples of using both
      y={"Agra","Delhi","Lucknow","Mumbai","Agra",1,2,('q')}
      print("Agra" in y)
      ```
-   Sets are implemented by using hash tables. When you add an object to a set, the position within the memory of the set object is          determined using the hash of the object to be added. When testing for membership, all that needs to be done is basically to look if the object is at the position determined by its hash, so the speed of this operation does not depend on the size of the set. For lists, in contrast, the whole list needs to be searched, which will become slower as the list grows.
+   Sets are implemented by using hash tables. When you add an object to a set, the position within the memory of the set object is          determined using the hash of the object to be added. When testing for membership, one checks whether the object is at the position determined by its hash, so the speed of this operation does not depend on the size of the set. For lists, in contrast, the whole list needs to be searched, which will become slower as the list grows.
 
    Note: Usually sets aren't faster than lists. Membership test is faster for sets, and so is removing an element. As long as you don't need these operations, lists are often faster.
 ---
