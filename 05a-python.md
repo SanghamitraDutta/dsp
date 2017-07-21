@@ -38,17 +38,18 @@ How are Python lists and sets similar and different? Give examples of using both
   - Lists are enclosed within square brackets ([and]) whereas sets are enclosed within curly branckets ({and}).
   - Lists can contain values of any type but sets can contain only immutable data types.
   - Elements or values in a list are ordered whereas in a set there is no order.
-  - Unlike lists, sets can't have multiple occurance of the same element.
- Example of a List:  
+  - Unlike lists, sets can't have multiple occurance of the same element.  
+ 
+ Example of a List:    
  ```  
  List1=[1,3,[4,'a'],'Priya','b','a',{"first":124,"second": 43})      #Can have any data type as an element 
  print(List1[6][1])                                                  #Supports indexing as elements are in a fixed order 
  ```
  Example of a Set:  
  ```  
- x={1,3,'Priya','b','a',("Agra","Delhi")}                           '#Can have only immutable elements
- y=set(["Hi","Hello",1,2,('a','b')],"Hi")                           '#It saves only unique elements. Here multiple occurance are discarded
- print(x)                                                           '#Doesn't support indexing as elements have no fixed order 
+ x={1,3,'Priya','b','a',("Agra","Delhi")}                            #Can have only immutable elements
+ y=set(["Hi","Hello",1,2,('a','b')],"Hi")                            #It saves only unique elements. Here multiple occurance are discarded
+ print(x)                                                            #Doesn't support indexing as elements have no fixed order 
  ```
  * Performance comparision for finding elements:
    - To find an element in a set, just check for the element with the 'in' keyword .
