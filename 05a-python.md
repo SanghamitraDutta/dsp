@@ -52,15 +52,15 @@ How are Python lists and sets similar and different? Give examples of using both
  print(x)                                                            #Doesn't support indexing as elements have no fixed order 
  ```
  * Performance comparision for finding elements:
-   - To find an element in a set, just check for the element with the 'in' keyword .
-     ```
-     y={"Agra","Delhi","Lucknow","Mumbai","Agra",1,2,('q')}
-     print("Agra" in y)
-     ```
-   - To find an element in list, just check for the element with the 'in' keyword 
+   - To find an element in list, just check for the element with the 'in' keyword. Here the whole list is searched for the element.
      ```
      l1=["Agra","Delhi","Lucknow","Mumbai","Agra",1,2,('q')]
      print("Agra" in l1)
+     ```
+   - To find an element in a set, just check for the element with the 'in' keyword. Here the hash value attached to the element is used to look up the position of the element. 
+     ```
+     y={"Agra","Delhi","Lucknow","Mumbai","Agra",1,2,('q')}
+     print("Agra" in y)
      ```
    Sets are implemented by using hash tables. When you add an object to a set, the position within the memory of the set object is          determined using the hash of the object to be added. When testing for membership, all that needs to be done is basically to look if the object is at the position determined by its hash, so the speed of this operation does not depend on the size of the set. For lists, in contrast, the whole list needs to be searched, which will become slower as the list grows.
 
