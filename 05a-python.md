@@ -32,24 +32,26 @@ How are Python lists and tuples similar and different? Which will work as keys i
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
 * Similarities between List and Sets:
-  - Both are sequences of comma seperated values
+  - Both are collection of elements separated by commas
   - Both are mutable
 * Dissimilarities:
+  - List is a sequence of comma seperated elements that supports efficient access using indices
+  - Set is a collection of unordered(no fixed sequence) elemets and the elements accessed by hash numbers that are mapped to each element
   - Lists are enclosed within square brackets ([and]) whereas sets are enclosed within curly branckets ({and}).
   - Lists can contain values of any type but sets can contain only immutable data types.
   - Elements or values in a list are ordered whereas in a set there is no order.
-  - Unlike lists, sets can't have multiple occurance of the same element.  
+  - Unlike lists, sets can't have duplicate occurance of the same element.  
  
  Example of a List:    
  ```  
- List1=[1,3,[4,'a'],'Priya','b','a',{"first":124,"second": 43})      #Can have any data type as an element 
- print(List1[6][1])                                                  #Supports indexing as elements are in a fixed order 
+ List1=[1,3,[4,'a'],'Priya','b','a',{"first":124,"second": 43})      #Can have any data type as elements 
+ print(List1[6][1])                                                  #Supports indexing  
  ```
  Example of a Set:  
  ```  
  x={1,3,'Priya','b','a',("Agra","Delhi")}                            #Can have only immutable elements
- y=set(["Hi","Hello",1,2,('a','b')],"Hi")                            #It saves only unique elements. Here multiple occurance are discarded
- print(x)                                                            #Doesn't support indexing as elements have no fixed order 
+ y=set(["Hi","Hello",1,2,('a','b')],"Hi")                            #It saves only unique elements
+ print(x)                                                            #Doesn't support indexing
  ```
  * Performance comparision for finding elements:
    - To find an element in list, just check for the element with the 'in' keyword. Here the whole list is searched for the element.
@@ -71,7 +73,45 @@ How are Python lists and sets similar and different? Give examples of using both
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+* Lambda function is a way to create small functions without a name.
+  Example:
+  ```
+  def ABC(n):
+    return lambda x: x+n
+    
+  a=ABC(9)
+  result1=a(10)
+  print(result1)
+  
+  result2=ABC(20)(21)
+  print(result2) 
+  ```
+* Lambda can be very useful when used in combination with the functions like filter(), map() and reduce().
+  - Lambda used with filter() can apply the lambda function to elements of an enitre list and then filter out only the elements that return a True value on applying lambda function.   
+     Example:  
+     ```
+     number = [0,1,1,2,3,5,8,13,21,34,55]
+     Odd= list(filter(lambda x: x % 2, number))
+     print(Odd)
+     Even = list(filter(lambda x: x % 2 == 0, number))
+     print(Even)
+     ```
+  - Lambda used with map() can apply the lambda function to all elements of sequence/s(like list) one by one and then return a single list with the results of the lambda function.  
+     Example:  
+     ```
+     p = [10,20,33]
+     q = [-14,12,-10]
+     r = [2,1,2]
+     s = list(map(lambda x,y,z: x+y-z, p,q,r))
+     print(s)
+     ```
+* Using Lambda in the key argument to sorted: Here key argument will first appply the lambda function to all the elements to be sorted in the iterable. Then the sorting of elements occurs based on the result returned by the lambda function.
+     Example:  
+     ```
+     student_info= {("Andrew",'A',20), ("Patrick",'B',19),("Carol",'C',24)}
+     sorted_age = sorted(student_info, key = lambda student: student[2])       #Elements sorted based on age
+     print(sorted_age)
+     ```
 
 ---
 
