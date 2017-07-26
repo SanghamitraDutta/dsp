@@ -18,6 +18,11 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
+    if count<10:
+        string = "Number of donuts: " + str(count)
+    else:
+        string = "Number of donuts: many "
+    return string
     raise NotImplementedError
 
 
@@ -37,6 +42,11 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
+    if len(s)<2:
+        string = ""
+    else:
+        string = s[:2]+s[-2:]
+    return string
     raise NotImplementedError
 
 
@@ -56,6 +66,14 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
+    first_char=s[0]
+    string= first_char
+    for i in range(1,len(s)):
+        if s[i] == first_char:
+            string += '*'
+        else:
+            string += s[i]
+    return string
     raise NotImplementedError
 
 
@@ -74,6 +92,8 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
+    string = b[:2] + a[2:] + " " + a[:2] +b[2:]
+    return string
     raise NotImplementedError
 
 
@@ -91,6 +111,14 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
+    if len(s)>2:
+        if s[-3:] != "ing":
+            string = s + "ing"
+        else:
+            string = s + "ly"
+    else:
+        string = s
+    return string
     raise NotImplementedError
 
 
@@ -111,6 +139,16 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
+    if "not" in s.lower():
+        index_not=s.index("not")
+        if "bad" in s[index_not+3:]:
+            string = s[:index_not] + "good" + s[s.index("bad")+3:]
+        else:
+            string = s
+    else:
+        string =s
+    return string
+
     raise NotImplementedError
 
 
@@ -130,4 +168,17 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
+    if len(a)%2 == 0:
+        a_index = int(len(a)/2)
+    else:
+        a_index= int(len(a)/2) + 1
+
+    if len(b)%2 == 0:
+        b_index = int(len(b)/2)
+    else:
+        b_index= int(len(b)/2) + 1
+
+    string = a[:a_index] + b[:b_index] + a[a_index:] + b[b_index:]
+    return string
+
     raise NotImplementedError
