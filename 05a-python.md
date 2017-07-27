@@ -173,8 +173,8 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
   d = {k:v for k, v in matrix_dictionary}
   print(d)
   
-  #Alternatively 
-  
+  #Alternatively   
+
   dictionary_key=['a','b','cd']
   dictionary_value=[10,20,40]
   d = {k:v for k in dictionary_key for v in dictionary_value}
