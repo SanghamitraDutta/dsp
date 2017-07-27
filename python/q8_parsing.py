@@ -7,11 +7,9 @@ import csv
 from operator import itemgetter
 
 with open("football.csv") as f:
-       data = list(csv.reader(f))
-       list1= [dict(zip(data[0],x)) for x in data]
+    data = list(csv.DictReader(f))
+    list1 = [dict(x) for x in data]
   
-del list1[0]
-
 goal_diff_list = [[x["Team"],int(x["Goals"])-int(x["Goals Allowed"])] for x in list1]
 goal_diff_list.sort(key = itemgetter(1))
 print(goal_diff_list)       
