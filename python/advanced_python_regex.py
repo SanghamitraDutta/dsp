@@ -101,6 +101,27 @@ with open('faculty.csv') as f:
 list_all_emails = [ x[' email'] for x in list1]    
 print("\nList of all email addresses: \n",list_all_emails,'\n')
 
+# Q4
+
+import csv
+
+with open('faculty.csv') as f:
+    data = list(csv.DictReader(f))
+    list1 = [ dict(x) for x in data ]
+  
+# Creating a list of all the email addressess   
+list_all_emails = [ x[' email'] for x in list1]    
+print("\nList of all email addresses: \n",list_all_emails,'\n')
+
+# Creating a list of all the email domains   
+list_all_domains = [ x[' email'].split('@')[1] for x in list1]    
+print("List of all email domains: \n",list_all_domains,'\n')
+
+# Creating a list of all the unique domains by removing duplicates
+list_unique_domains=list(set(list_all_domains))
+print("No. of unique email domains: ",len(list_unique_domains))
+print("List of all unique email domains: ", list_unique_domains,'\n')
+
 
     
     
