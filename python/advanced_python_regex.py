@@ -43,7 +43,45 @@ print("Cleaned dictionary: ", dict1,'\n')
 print("Degrees and their frequencies:")
 for i in dict1:
     print(i,':', dict1[i])
+
     
+# Q2
+import csv
+
+with open('faculty.csv') as f:
+    data = list(csv.DictReader(f))
+    list1 = [ dict(x) for x in data ]
+  
+# Creating a list of all the titles   
+list_all_titles = [ x[' title'] for x in list1]    
+print("\nList of all titles: ", list_all_titles,'\n')
+
+
+# Creating a list of all the unique titles by removing duplicates
+list_unique_titles=list(set(list_all_titles))
+print("List of all unique titles: ", list_unique_titles,'\n')
+
+
+# Creating a dictionary with unique title as the key and their frequencies as values
+dict1 = { i:list_all_titles.count(i) for i in list_unique_titles } 
+print("Dictionary of all unique titles with their frequencies: ", dict1,'\n')        
+
+
+# Cleaning dictionary data by removing various versions of a title and adding their frequencies to a single key
+for i in dict1:
+    if  i == 'Assistant Professor is Biostatistics':
+        dict1['Assistant Professor of Biostatistics'] += dict1[i]
+   
+del dict1['Assistant Professor is Biostatistics']
+
+print("Cleaned dictionary: ", dict1,'\n')
+
+print("Titles and their frequencies:")
+for i in dict1:
+    print(i,':', dict1[i])
+    
+
+
     
     
     
