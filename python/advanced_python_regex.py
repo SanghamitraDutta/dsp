@@ -43,6 +43,8 @@ del dict1['0']
 
 print("Cleaned dictionary: ", dict1,'\n')
 
+print("No. of different degress: ",len(dict1),'\n') 
+
 print("Degrees and their frequencies:")
 for i in dict1:
     print(i,':', dict1[i])
