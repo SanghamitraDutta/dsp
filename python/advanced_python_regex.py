@@ -5,6 +5,9 @@ import csv
 with open('faculty.csv') as f:
     data = list(csv.DictReader(f))
     list1 = [ dict(x) for x in data ]
+    for x in list1:
+        print (x)
+
 
 # Creating a list of all the degrees   
 list_all_degrees = []  
@@ -51,6 +54,9 @@ import csv
 with open('faculty.csv') as f:
     data = list(csv.DictReader(f))
     list1 = [ dict(x) for x in data ]
+    for x in list1:
+        print (x)
+
   
 # Creating a list of all the titles   
 list_all_titles = [ x[' title'] for x in list1]    
@@ -80,6 +86,20 @@ print("Titles and their frequencies:")
 for i in dict1:
     print(i,':', dict1[i])
     
+# Q3
+
+import csv
+
+with open('faculty.csv') as f:
+    data = list(csv.DictReader(f))
+    list1 = [ dict(x) for x in data ]
+    for x in list1:
+        print (x)
+
+  
+# Creating a list of all the email addressess   
+list_all_emails = [ x[' email'] for x in list1]    
+print("\nList of all email addresses: \n",list_all_emails,'\n')
 
 
     
