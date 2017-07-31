@@ -1,4 +1,4 @@
-PLACE YOUR CODE HERE
+
 import csv
 
 with open('faculty.csv') as f:

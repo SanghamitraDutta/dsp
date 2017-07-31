@@ -1,4 +1,4 @@
-PLACE YOUR CODE HERE
+
 # Q1
 import csv
 
