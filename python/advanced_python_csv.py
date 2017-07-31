@@ -13,3 +13,5 @@ print("\nList of all email addresses: \n",list_all_emails,'\n')
 with open('email.csv', 'w') as fwrite:
     data_writer = csv.writer(fwrite, delimiter='\n')
     data_writer.writerow(list_all_emails)
+    
+     
