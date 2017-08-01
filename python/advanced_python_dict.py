@@ -34,3 +34,15 @@ print(professor_dict)
 
 
 # Q8
+
+import csv
+
+with open('faculty.csv') as f:
+    data = list(csv.DictReader(f))
+    list1 = [ dict(x) for x in data ]         
+
+# Creating the dictionary in the specified format
+                   
+professor_dict = { (x['name'].split()[-1],x['name'].split()[0]):[x[' degree'], x[' title'][:-17], x[' email']] for x in list1 }
+                  
+print(professor_dict)
