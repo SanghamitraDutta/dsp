@@ -42,4 +42,9 @@ with open('faculty.csv') as f:
                    
 professor_dict = { (x['name'].split()[-1],x['name'].split()[0]):[x[' degree'], x[' title'][:-17], x[' email']] for x in list1 }
                   
-print(professor_dict)
+count=0
+for k,v in professor_dict.items():
+    if count<3:
+        print(k,v)
+        count += 1
+        
