@@ -92,8 +92,9 @@ professor_dict = {('Susan', 'Ellenberg'): ['Ph.D.', 'Professor', 'sellenbe@upenn
 
 Print the first 3 key and value pairs of the dictionary:
 
->> REPLACE THIS WITH YOUR RESPONSE
-
+```
+('Scarlett', 'Bellamy'): [' Sc.D.', 'Associate Professor', 'bellamys@mail.med.upenn.edu'], ('Warren', 'Bilker'): ['Ph.D.', 'Professor', 'warren@upenn.edu'], ('Matthew', 'Bryan'): [' PhD', 'Assistant Professor', 'bryanma@upenn.edu']
+```
 #### Q8.  It looks like the current dictionary is printing by first name.  Print out the dictionary key value pairs based on alphabetical orders of the last name of the professors
 
 >> REPLACE THIS WITH YOUR RESPONSE
