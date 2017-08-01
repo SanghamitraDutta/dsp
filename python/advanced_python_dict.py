@@ -1,5 +1,4 @@
 # Q6
-
 import csv
 
 with open('faculty.csv') as f:
@@ -19,7 +18,6 @@ print(faculty_dict)
 
 
 # Q7
-
 import csv
 
 with open('faculty.csv') as f:
@@ -34,7 +32,6 @@ print(professor_dict)
 
 
 # Q8
-
 import csv
 
 with open('faculty.csv') as f:
