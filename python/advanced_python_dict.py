@@ -13,8 +13,13 @@ for x in list1:
         faculty_dict.update({ x['name'].split()[-1]:[[x[' degree'], x[' title'][:-17],x[' email']]]})
     else:
         faculty_dict[x['name'].split()[-1]].append([x[' degree'],x[' title'][:-17],x[' email']])                      
-                              
-print(faculty_dict)
+           
+# Printing the first 3 key value pairs of the dicitonary       
+count=0
+for k,v in faculty_dict.items():
+    if count<3:
+        print(k,':',v)
+        count += 1
 
 
 # Q7
@@ -27,8 +32,13 @@ with open('faculty.csv') as f:
 # Creating the dictionary in the specified format
                    
 professor_dict = { (x['name'].split()[0],x['name'].split()[-1]):[x[' degree'], x[' title'][:-17], x[' email']] for x in list1 }
-                   
-print(professor_dict)
+  
+# Printing the first 3 key value pairs of the dicitonary    
+count=0
+for k,v in professor_dict.items():
+    if count<3:
+        print(k,':',v)
+        count += 1
 
 
 # Q8
@@ -41,10 +51,11 @@ with open('faculty.csv') as f:
 # Creating the dictionary in the specified format
                    
 professor_dict = { (x['name'].split()[-1],x['name'].split()[0]):[x[' degree'], x[' title'][:-17], x[' email']] for x in list1 }
-                  
+   
+# Printing the first 3 key value pairs of the dicitonary       
 count=0
 for k,v in professor_dict.items():
     if count<3:
-        print(k,v)
+        print(k,':',v)
         count += 1
         
