@@ -8,7 +8,6 @@ with open('faculty.csv') as f:
     for x in list1:
         print (x)
 
-
 # Creating a list of all the degrees   
 list_all_degrees = []  
 for x in list1:
