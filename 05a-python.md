@@ -49,7 +49,7 @@ How are Python lists and sets similar and different? Give examples of using both
  ```
  Example of a Set:  
  ```  
- x={1,3,'Priya','b','a',("Agra","Delhi")}                            #Can have only immutable elements
+ x={1,3,'Priya','b','a',("Agra","Delhi")}                            #Can have only immutable elements. No list nor dict
  y=set(["Hi","Hello",1,2,('a','b')],"Hi")                            #It saves only unique elements
  print(x)                                                            #Doesn't support indexing
  ```
