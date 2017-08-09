@@ -75,7 +75,7 @@ How are Python lists and sets similar and different? Give examples of using both
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
 * Lambda function is a way to create small functions without a name.
-  Example:
+  Example 1:
   ```
   def ABC(n):
     return lambda x: x+n
@@ -86,6 +86,14 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
   
   result2=ABC(20)(21)
   print(result2) 
+  ```
+  Example 2 (lambda fn. syntax can written in just 1 line):
+  ```
+  f =  lambda input_list: [i for i in input_list if i%2==0]
+
+  my_list = [3,4,7,2,9,170]
+  for x in f(my_list):
+    print(x)
   ```
 * Lambda can be very useful when used in combination with the functions like filter(), map() and reduce().
   - Lambda used with filter() can apply the lambda function to elements of an enitre list and then filter out only the elements that return a True value on applying lambda function.   
