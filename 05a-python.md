@@ -44,14 +44,15 @@ How are Python lists and sets similar and different? Give examples of using both
  
  Example of a List:    
  ```  
- List1=[1,3,[4,'a'],'Priya','b','a',{"first":124,"second": 43})      #Can have any data type as elements 
- print(List1[6][1])                                                  #Supports indexing  
+ List1=[1,3,[4,'a'],'Priya','b','a',{"first":124,"second": 43}]    #Can have any data type as elements 
+ print(List1[6][1])                                                #Supports indexing  
  ```
  Example of a Set:  
  ```  
- x={1,3,'Priya','b','a',("Agra","Delhi")}                            #Can have only immutable elements. No list nor dict
- y=set(["Hi","Hello",1,2,('a','b')],"Hi")                            #It saves only unique elements
- print(x)                                                            #Doesn't support indexing
+ x={1,3,'Priya','b','a',("Agra","Delhi")}        #Can have only immutable elements. No list nor dict
+ y=set(["Hi","Hello",1,2,('a','b'),"Hi"])        #Converts list argument into a set.But elements of the list can't be mutable.
+ print(y)                                        #Doesn't support indexing
+ >>>{1, 2, ('a', 'b'), 'Hello', 'Hi'}            #Set has no duplicate elements present in the list above
  ```
  * Performance comparision for finding elements:
    - To find an element in list, just check for the element with the 'in' keyword. Here the whole list is searched for the element.
