@@ -87,7 +87,7 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
   result2=ABC(20)(21)
   print(result2) 
   ```
-  Example 2 (lambda fn. syntax can written in just 1 line):
+  Example 2 (lambda fn. syntax can be written in just 1 line):
   ```
   f =  lambda input_list: [i for i in input_list if i%2==0]
 
