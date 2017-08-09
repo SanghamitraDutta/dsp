@@ -42,12 +42,12 @@ How are Python lists and sets similar and different? Give examples of using both
   - Elements or values in a list are ordered whereas in a set there is no order.
   - Unlike lists, sets can't have duplicate occurance of the same element.  
  
- Example of a List:    
+ Example of List:    
  ```  
  List1=[1,3,[4,'a'],'Priya','b','a',{"first":124,"second": 43}]    #Can have any data type as elements 
  print(List1[6][1])                                                #Supports indexing  
  ```
- Example of a Set:  
+ Example of Set:  
  ```  
  x={1,3,'Priya','b','a',("Agra","Delhi")}        #Can have only immutable elements. No list nor dict
  y=set(["Hi","Hello",1,2,('a','b'),"Hi"])        #Converts list argument into a set.But elements of the list can't be mutable.
