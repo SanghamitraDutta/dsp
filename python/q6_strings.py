@@ -139,11 +139,14 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
-    import math
-    
-    l1 = math.ceil(len(s1)/2)
-    l2 = math.ceil(len(s2)/2)
-    string = s1[:l1]+s2[:l2]+s1[l1:]+s2[l2:]
+     if "not" in s.lower():
+        index_not=s.index("not")
+        if "bad" in s[index_not+3:]:
+            string = s[:index_not] + "good" + s[s.index("bad")+3:]
+        else:
+            string = s
+    else:
+        string =s
     return string
 
     raise NotImplementedError
@@ -165,17 +168,11 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    if len(a)%2 == 0:
-        a_index = int(len(a)/2)
-    else:
-        a_index= int(len(a)/2) + 1
-
-    if len(b)%2 == 0:
-        b_index = int(len(b)/2)
-    else:
-        b_index= int(len(b)/2) + 1
-
-    string = a[:a_index] + b[:b_index] + a[a_index:] + b[b_index:]
+    import math
+    
+    l1 = math.ceil(len(s1)/2)
+    l2 = math.ceil(len(s2)/2)
+    string = s1[:l1]+s2[:l2]+s1[l1:]+s2[l2:]
     return string
 
     raise NotImplementedError
