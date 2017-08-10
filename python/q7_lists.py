@@ -92,10 +92,9 @@ def remove_adjacent(nums):
     >>> remove_adjacent([])
     []
     """
-    result_list = [ nums[i] for i in range(len(nums)-1) if nums[i] != nums[i+1]]
-    if len(nums) > 0:
-        result_list.append(nums[-1])
-    return result_list
+    final_list = [nums[0]]
+    final_list += [nums[i] for i in range(1,len(nums)) if nums[i] != nums[i-1]]   
+    return final_list
     
     raise NotImplementedError
 
