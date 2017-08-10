@@ -139,14 +139,11 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
-    if "not" in s.lower():
-        index_not=s.index("not")
-        if "bad" in s[index_not+3:]:
-            string = s[:index_not] + "good" + s[s.index("bad")+3:]
-        else:
-            string = s
-    else:
-        string =s
+    import math
+    
+    l1 = math.ceil(len(s1)/2)
+    l2 = math.ceil(len(s2)/2)
+    string = s1[:l1]+s2[:l2]+s1[l1:]+s2[l2:]
     return string
 
     raise NotImplementedError
