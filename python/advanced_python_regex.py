@@ -48,6 +48,40 @@ print("Degrees and their frequencies:")
 for i in dict1:
     print(i,':', dict1[i])
 
+#Q1 using re
+
+import csv
+import re 
+
+with open('faculty.csv') as f:
+    data = list(csv.DictReader(f))
+    list1 = [ dict(x) for x in data ]
+    
+# Creating a list of all the degrees   
+list_all_degrees = []  
+for x in list1:
+    temp = x[' degree'].split()
+    x[' degree']= temp
+    list_all_degrees.extend(x[' degree'])
+
+print("List of all degrees: ", list_all_degrees,'\n')
+
+# or use the simple method below to create the dictionary with unique degrees and their frequencies in just 1 step
+dict1 = {}
+
+for i in list_all_degrees:
+    degree = re.sub('\.','',i)  # degree string without any '.'
+    if degree in dict1:
+        dict1[degree] += 1
+    else:
+        dict1.update({degree:1})  # if degree is not in dictionary then add as a new item        
+    
+print("No. of different degress: ",len(dict1),'\n') 
+print("Degrees and their frequencies:")
+for i in dict1:
+    print(i,':', dict1[i])
+
+
     
 # Q2
 import csv
@@ -86,6 +120,29 @@ print("Cleaned dictionary: ", dict1,'\n')
 print("Titles and their frequencies:")
 for i in dict1:
     print(i,':', dict1[i])
+
+#Q2 using re
+
+import csv
+import re 
+
+with open('faculty.csv') as f:
+    data = list(csv.DictReader(f))
+    list1 = [ dict(x) for x in data ]
+    
+# Creating a dicitonary of all titles and their frequencies and cleaning title data
+dict1 = {}
+for row in list1:
+    title = re.sub(r'\bis\b','of',row[' title'])  
+    if title in dict1:
+        dict1[title] += 1
+    else:
+        dict1.update({title:1})  # if title is not in dictionary then add as a new item
+          
+print("Titles and their frequencies:")
+for i in dict1:
+    print(i,':', dict1[i])
+
     
 # Q3
 
@@ -94,10 +151,7 @@ import csv
 with open('faculty.csv') as f:
     data = list(csv.DictReader(f))
     list1 = [ dict(x) for x in data ]
-    for x in list1:
-        print (x)
-
-  
+    
 # Creating a list of all the email addressess   
 list_all_emails = [ x[' email'] for x in list1]    
 print("\nList of all email addresses: \n",list_all_emails,'\n')
@@ -120,6 +174,29 @@ print("List of all email domains: \n",list_all_domains,'\n')
 
 # Creating a list of all the unique domains by removing duplicates
 list_unique_domains=list(set(list_all_domains))
+print("No. of unique email domains: ",len(list_unique_domains))
+print("List of all unique email domains: ", list_unique_domains,'\n')
+
+#Q4 using re
+
+import csv
+import re 
+
+with open('faculty.csv') as f:
+    data = list(csv.DictReader(f))
+    list1 = [ dict(x) for x in data ]  
+  
+# Creating a list of all the email addressess   
+list_all_emails = [ x[' email'] for x in list1]    
+print("\nList of all email addresses: \n",list_all_emails,'\n')
+
+# Creating a list of all unique email domains
+list_unique_domains = []
+for x in list_all_emails:
+    domain = x.split('@')[1]
+    if domain not in list_unique_domains:
+        list_unique_domains.append(domain)
+
 print("No. of unique email domains: ",len(list_unique_domains))
 print("List of all unique email domains: ", list_unique_domains,'\n')
 
