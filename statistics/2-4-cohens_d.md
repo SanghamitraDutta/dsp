@@ -35,3 +35,6 @@ print('Difference in totalwgt_lb, Cohen\'s d:', d)
 d = CohenEffectSize(firsts.prglngth,others.prglngth)
 print('Difference in prglngth, Cohen\'s d:', d)
 ```
+### Analysis of results
+> Difference in totalwgt\_lb between 1st and later pregnancies, Cohen's d: -0.0886729270726    
+Difference in prglngth between 1st and later pregnancies, Cohen's d: 0.0288790446544
