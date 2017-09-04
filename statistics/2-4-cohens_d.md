@@ -1,5 +1,6 @@
 [Think Stats Chapter 2 Exercise 4](http://greenteapress.com/thinkstats2/html/thinkstats2003.html#toc24) (Cohen's d)
 
+#### Code
 ```  
 import numpy as np
 
@@ -35,6 +36,9 @@ print('Difference in totalwgt_lb, Cohen\'s d:', d)
 d = CohenEffectSize(firsts.prglngth,others.prglngth)
 print('Difference in prglngth, Cohen\'s d:', d)
 ```
-### Analysis of results
-> Difference in totalwgt\_lb between 1st and later pregnancies, Cohen's d: -0.0886729270726    
+#### Results
+Difference in totalwgt\_lb between 1st and later pregnancies, Cohen's d: -0.0886729270726    
 Difference in prglngth between 1st and later pregnancies, Cohen's d: 0.0288790446544
+
+#### Analysis
+Effect size of difference in **Total Weight** is **4 times** stronger than the difference in **Pregnancy Length** 
