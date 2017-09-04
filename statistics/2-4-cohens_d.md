@@ -37,8 +37,8 @@ d = CohenEffectSize(firsts.prglngth,others.prglngth)
 print('Difference in prglngth, Cohen\'s d:', d)
 ```
 #### Results
-Difference in totalwgt\_lb between 1st and later pregnancies, Cohen's d: -0.0886729270726    
-Difference in prglngth between 1st and later pregnancies, Cohen's d: 0.0288790446544
+Difference in mean totalwgt\_lb between 1st and later pregnancies, Cohen's d: -0.0886729270726    
+Difference in mean prglngth between 1st and later pregnancies, Cohen's d: 0.0288790446544
 
 #### Analysis
-Effect size of difference in **Total Weight** is **4 times** stronger than the difference in **Pregnancy Length** 
+Effect size of difference in means of **Total Weight** is **4 times** stronger than the difference in means of **Pregnancy Length** 
