@@ -23,7 +23,6 @@ live = preg[preg.outcome == 1]
 firsts = live[live.birthord == 1]
 others = live[live.birthord != 1]
 
-
 print('Difference in totalwgt_lb relative to mean (Percentage points)', 
           (firsts.totalwgt_lb.mean() - others.totalwgt_lb.mean()) / live.totalwgt_lb.mean() * 100)
 
@@ -35,5 +34,4 @@ print('Difference in totalwgt_lb, Cohen\'s d:', d)
 
 d = CohenEffectSize(firsts.prglngth,others.prglngth)
 print('Difference in prglngth, Cohen\'s d:', d)
-
 ```
