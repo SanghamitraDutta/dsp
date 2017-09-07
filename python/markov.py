@@ -20,34 +20,26 @@ from collections import defaultdict
 def readfile(in_file):
     with open(in_file) as f:
         text = f.read()
-    
     return text
 
 
 def nxt_wrds_dict(text): # Makes dict with Keys: words from file & Values: list of words that follow the key word in the file
-
     word_list = text.split() 
-    
     d = defaultdict(list)
-
     for i in range(0,len(word_list)-1): # for loop goes up to penultimate word in file as no words follow the last word
-        d[word_list[i]].append(word_list[i+1]) # for every word key append the value list with the word that follows the key in the file
-        
+        d[word_list[i]].append(word_list[i+1]) # for every word key append the value list with the word that follows the key in the file    
     return d
 
 
 def markov_generator(nxt_word_dict, n):
-
     StartWordsList = [word for word in nxt_word_dict.keys() if word[0].isupper()] #List all keys with Capital letter as they start a sentence
     First_word = random.choice(StartWordsList) # find a random starting word
     Output_List = [First_word]
-
     i=1
     while i< n:
         NextWord = random.choice(nxt_word_dict[Output_List[-1]]) #for each output word(key) find next word randomly(from value list)
         Output_List.append(NextWord)
-        i+=1
-        
+        i+=1    
     MarkovOutput = " ".join(Output_List)
     return MarkovOutput
 
@@ -60,5 +52,4 @@ if __name__ == '__main__':
     nextword_dict = nxt_wrds_dict(input_text)
     markov_text = markov_generator(nextword_dict, word_count)
     print(markov_text)
-
     #print(nextword_dict) 
