@@ -32,4 +32,4 @@ Actual mean no. of children under 18years in a household are 1.02420515504
 Observed/Biased mean no. of children under 18years in a household are 2.40367910066
 
 ### Analysis
-If you ask children about the no. of children in the household as observed by them you will find the observed mean of the no. of children in a household to approximately 1.38 more than the actual mean no. of children in a household
+If you ask children about the no. of children in the household as observed by them you will find the observed mean of the no. of children in a household to be approximately 1.38 more than the actual mean no. of children in a household
