@@ -42,5 +42,5 @@ Difference in mean prglngth between 1st and later pregnancies, Cohen's d: 0.0288
 
 #### Analysis
 * First babies totalwgt is less than later babies by .089 standard deviations but this is a small difference.
-* First babies pregnancy lenght is longer than later babies y .029 standard deviation and this is also a small difference. (Significant difference occurs at a difference of 2.5 standard deviation or higher)
+* First babies pregnancy length is longer than later babies by .029 standard deviation and this is also a small difference. (Significant difference occurs at a difference of 2.5 standard deviation or higher)
 * Effect size of difference in means of **Total Weight** is **4 times** stronger than the difference in means of **Pregnancy Length** 
