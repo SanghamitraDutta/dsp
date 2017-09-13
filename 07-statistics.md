@@ -93,7 +93,7 @@ Probability of an Identical Twin = P(IT) = 1/300
 Probability of an Fraternal Twin = P(FT) = 1/125  
 Gender of both the Twins is boy. I'll refer to this type of twin in this solution as BB.   
 
-We need to find the probability of this BB twin being Identical.    
+**We need to find the probability of this given BB twin being Identical = P(IT/BB) **   
 Using Bayes theorem here:  
 **P(IT/BB) = P(BB/IT) P(IT) / P(BB)**   
 
