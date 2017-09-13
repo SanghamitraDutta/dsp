@@ -95,7 +95,7 @@ Gender of both the Twins is boy. I'll refer to this type of twin in this solutio
 
 We need to find the probability of this BB twin being Identical.    
 Using Bayes theorem here:  
-P(IT/BB) = P(BB/IT) P(IT)/P(BB)   
+**P**(IT/BB)  =  **P**(BB/IT)  **P**(IT) / **P**(BB)   
 
 Identical Twins are of 2 types = BB and GG  
 Probabilty of being BB Twin given they are Identical Twins =  P(BB/IT) = 1/2 
