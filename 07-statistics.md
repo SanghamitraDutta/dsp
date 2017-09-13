@@ -120,8 +120,18 @@ Putting this all together in Bayes Theorem:
 ### Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
-
+>> **Frequentist Statistics**
+   * Draws inferences based on probability of an event occuring in the long run of the experiment repeated under the same conditions
+   * Depends on likelihood of observed data and unobserved data
+   * Doesn't take into consideration any prior beliefs or assumptions
+   * Less computationally intensive
+>> **Bayesian Statistics**
+   * Draws inferences based on both prior(beliefs/assumptions) and the likelihood of the observed data
+   * Requires one to know or construct a subjective prior (beliefs or assumptions)
+   * Maybe computationally intensive due to intergation over many parameters
+  
+  Source: https://ocw.mit.edu/courses/mathematics/18-05-introduction-to-probability-and-statistics-spring-2014/readings/MIT18_05S14_Reading20.pdf
+  
 ---
 
 ## <a name="section-e"></a>5.  Optional Exercises
