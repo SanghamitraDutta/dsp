@@ -91,9 +91,9 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 **We are given:**  
 Probability of an Identical Twin = P(IT) = 1/300  
 Probability of an Fraternal Twin = P(FT) = 1/125  
-Gender of both the Twins is boy. I'll refer to this type of twin in this solution as BB.   
+Gender of both the twins is boy. I'll refer to this type of twin in this solution as BB.   
 
-**We need to find the probability of this given BB twin being Identical = P(IT/BB)**   
+**We need to find the probability of them being Identical Twins given they are a BB Twin = P(IT/BB)**   
 Using Bayes theorem here:  
 **P(IT/BB) = P(BB/IT) P(IT) / P(BB)**   
 
