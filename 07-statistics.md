@@ -94,7 +94,7 @@ Probability of an Fraternal Twin = P(FT) = 1/125
 Gender of both the Twins is boy. I'll refer to this type of twin in this solution as BB.   
 
 We need to find the probability of this BB twin being Identical.    
-Using Baye's theorem here:  
+Using Bayes theorem here:  
 P(IT/BB) = P(IT & BB)/P(BB)   
 
 Identical Twins are of 2 types = BB and GG  
@@ -106,7 +106,7 @@ Probabilty of being Fraternal Twins and BB Twin =  P(FT & BB) = 1/125 * 1/4 = 1/
 Now BB Twins can be of 2 types: Identical or Fraternal  
 Probability of BB Twins = P(BB) = P(IT & BB) + P(FT & BB) = (1/300 * 1/2) + (1/125 * 1/4) = 11/3000  
  
-Putting this all together in Baye's Theorem:   
+Putting this all together in Bayes Theorem:   
 P(IT/BB) = P(IT & BB)/P(BB) = (1/600) / (11/3000) = 5/11 = 0.454  
 
 **The probability that Elvis was an identical twin is 0.454.**  
