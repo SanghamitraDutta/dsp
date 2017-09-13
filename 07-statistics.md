@@ -108,7 +108,7 @@ Total Probability of being BB Twins = **P(BB) = P(BB & IT) + P(BB & FT) = P(BB/I
 = (1/2 * 1/300) + (1/4 * 1/125) = 11/3000  
  
 Putting this all together in Bayes Theorem:   
-**P(IT/BB) = P(BB/IT) P(IT)/P(BB)** = (1/2 * 1/300) / (11/3000) = 5/11 = 0.454  
+**P(IT/BB) = P(BB/IT) P(IT) / P(BB)** = (1/2 * 1/300) / (11/3000) = 5/11 = 0.454  
 
 **The probability that Elvis was an identical twin is 0.454.**  
 
