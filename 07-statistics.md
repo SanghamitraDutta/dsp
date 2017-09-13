@@ -86,7 +86,7 @@ Bayes' Theorem is an important tool in understanding what we really know, given 
 
 Elvis Presley had a twin brother who died at birth.  What is the probability that Elvis was an identical twin? Assume we observe the following probabilities in the population: fraternal twin is 1/125 and identical twin is 1/300.  
 
-**Bayes Theorem = P(A/B) = P(A & B)/P(B)**  
+**Bayes Theorem = P(A/B) = P(A & B)/P(B) = P(B/A) P(A)/P(B)**  
 
 **We are given:**  
 Probability of an Identical Twin = P(IT) = 1/300  
@@ -95,19 +95,20 @@ Gender of both the Twins is boy. I'll refer to this type of twin in this solutio
 
 We need to find the probability of this BB twin being Identical.    
 Using Bayes theorem here:  
-P(IT/BB) = P(IT & BB)/P(BB)   
+P(IT/BB) = P(BB/IT) P(IT)/P(BB)   
 
 Identical Twins are of 2 types = BB and GG  
-Probabilty of being Identical Twins and BB Twin =  P(IT & BB) = 1/300 * 1/2 = 1/600  
+Probabilty of being BB Twin given they are Identical Twins =  P(BB/IT) = 1/2 
 
 Fraternal Twins are of 4 types = BB, GG, BG, GB (In boy and girl twins or siblings, order of birth matters)  
-Probabilty of being Fraternal Twins and BB Twin =  P(FT & BB) = 1/125 * 1/4 = 1/500  
+Probabilty of being BB Twin given they are Fraternal Twins =  P(BB/FT) = 1/4  
 
 Now BB Twins can be of 2 types: Identical or Fraternal  
-Probability of BB Twins = P(BB) = P(IT & BB) + P(FT & BB) = (1/300 * 1/2) + (1/125 * 1/4) = 11/3000  
+Total Probability of being BB Twins = P(BB) = P(BB & IT) + P(BB & FT) = P(BB/IT) * P(IT) + P(BB/FT) * P(FT)   
+= (1/2 * 1/300) + (1/4 * 1/125) = 11/3000  
  
 Putting this all together in Bayes Theorem:   
-P(IT/BB) = P(IT & BB)/P(BB) = (1/600) / (11/3000) = 5/11 = 0.454  
+P(IT/BB) = P(BB/IT) P(IT)/P(BB) = (1/2 * 1/300) / (11/3000) = 5/11 = 0.454  
 
 **The probability that Elvis was an identical twin is 0.454.**  
 
