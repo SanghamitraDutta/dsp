@@ -131,7 +131,8 @@ How do frequentist and Bayesian statistics compare?
    * Maybe computationally intensive due to intergation over many parameters
   
   Source: https://ocw.mit.edu/courses/mathematics/18-05-introduction-to-probability-and-statistics-spring-2014/readings/MIT18_05S14_Reading20.pdf
-  
+  Useful Link:
+  https://mobile.nytimes.com/2014/09/30/science/the-odds-continually-updated.html?referrer=
 ---
 
 ## <a name="section-e"></a>5.  Optional Exercises
