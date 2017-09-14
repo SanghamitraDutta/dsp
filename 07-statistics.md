@@ -132,6 +132,12 @@ How do frequentist and Bayesian statistics compare?
   
   #### Source: https://ocw.mit.edu/courses/mathematics/18-05-introduction-to-probability-and-statistics-spring-2014/readings/MIT18_05S14_Reading20.pdf  
   #### Useful Link: https://mobile.nytimes.com/2014/09/30/science/the-odds-continually-updated.html?referrer=
+  
+  **Example from above link that illustrates the difference of the 2 approaches:** 
+  The essence of the frequentist technique is to apply probability to data. If you suspect your friend has a weighted coin, for example, and you observe that it came up heads nine times out of 10, a frequentist would calculate the probability of getting such a result with an unweighted coin. The answer (about 1 percent) is not a direct measure of the probability that the coin is weighted; it’s a measure of how improbable the nine-in-10 result is with an unweighted coin— a piece of information that can be useful in investigating your suspicion.
+  By contrast, Bayesian calculations go straight for the probability of the hypothesis, factoring in not just the data from the coin-toss experiment but any other relevant information — including whether you have previously seen your friend use a weighted coin.
+  
+  
 ---
 
 ## <a name="section-e"></a>5.  Optional Exercises
